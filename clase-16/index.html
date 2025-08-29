@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 16</title>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0.5px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicios</h1>
+    <h2>1. Tabla de multiplicar</h2>
+    <ul>
+      <li>Pide al usuario un número</li>
+      <li>
+        Muestra la tabla de multiplicar de ese número del 1 al 10 usando un
+        ciclo
+      </li>
+    </ul>
+    <form id="ejercicio-1">
+      <label>Número: <input type="number" id="num1" required /></label><br />
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje-ejercicio-1"></div>
+
+    <h2>2. Suma de números</h2>
+    <ul>
+      <li>Pide al usuario 5 números</li>
+      <li>
+        Usa una función para sumar todos los números y muestra el resultado
+      </li>
+    </ul>
+    <form id="ejercicio-2">
+      <label>Número 1: <input type="number" id="num1" required /></label><br />
+      <label>Número 2: <input type="number" id="num2" required /></label><br />
+      <label>Número 3: <input type="number" id="num3" required /></label><br />
+      <label>Número 4: <input type="number" id="num4" required /></label><br />
+      <label>Número 5: <input type="number" id="num5" required /></label><br />
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje-ejercicio-2"></div>
+
+    <h2>3. Contador de pares e impares</h2>
+    <ul>
+      <li>Crea un array con 10 números, generados aleatoriamente en 1 y 100</li>
+      <li>
+        Usa un ciclo y una función para contar cuántos son pares y cuántos
+        impares
+      </li>
+    </ul>
+    <form id="ejercicio-3">
+      <button type="submit">Generar</button>
+    </form>
+    <div id="mensaje-ejercicio-3"></div>
+
+    <h2>4. Buscar un elemento</h2>
+    <ul>
+      <li>Pide al usuario una lista de palabras (separadas por coma)</li>
+      <li>Pide una palabra a buscar</li>
+      <li>Usa una función para verificar si está en la lista</li>
+    </ul>
+    <form id="ejercicio-4">
+      <label
+        >Lista de palabras (separadas por coma):
+        <input type="text" id="lista" required /> </label
+      ><br /><br />
+      <label
+        >Palabra a buscar: <input type="text" id="palabra" required /> </label
+      ><br /><br />
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="mensaje-ejercicio-4"></div>
+
+    <script src="ejercicio-1.js"></script>
+    <script src="ejercicio-2.js"></script>
+    <script src="ejercicio-3.js"></script>
+    <script src="ejercicio-4.js"></script>
+  </body>
+</html>
