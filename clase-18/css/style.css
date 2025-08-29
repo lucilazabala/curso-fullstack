@@ -1,0 +1,19 @@
+* {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#nuevaTarea {
+  width: 250px;
+}
+
+.completada {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.btnEliminar {
+  margin: 0px 5px;
+}
