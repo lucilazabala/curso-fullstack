@@ -57,7 +57,7 @@ function btnAgregar() {
     texto: nuevaTarea, // se pone nuevaTarea porque es el valor que obtenemos del "const nuevaTarea = document.querySelector("#nuevaTarea").value;"
     completada: false, // se pone false porque la tarea al principio no esta completada
     li: agregarNuevaTarea, // se pone para que funcione los filtros de los botones
-  };
+  }
   filtrarTareas.push(filtrarTarea); // se hace un push para cargar las tareas
 
   // Click para marcar/desmarcar tarea como completada
@@ -74,7 +74,7 @@ function btnAgregar() {
   // Crear boton eliminar
   const btnEliminar = document.createElement("button");
   btnEliminar.textContent = "x";
-  btnEliminar.classList.add("btnEliminar"); // <- agregar la clase
+  btnEliminar.classList.add("btnEliminar"); // agregar la clase
   btnEliminar.onclick = function () {
     agregarNuevaTarea.remove();
   };

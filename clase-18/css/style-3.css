@@ -1,0 +1,15 @@
+label {
+  display: block;
+  margin: 10px 0px 0px 0px;
+}
+
+#nombre, #email, #contra, #contraConfirmar {
+    width: 200px;
+}
+
+#errorNombre, #errorEmail, #errorContra, #errorContraConfirmar {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clase 18</title>
     <link rel="stylesheet" href="/clase-18/css/style-2.css" />
+    <link rel="stylesheet" href="/clase-18/css/style-3.css" />
   </head>
   <body>
     <!-- Consigna N°1 -->
@@ -42,6 +43,56 @@
     <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea" />
     <button id="btnAgregar">+</button>
     <ul id="listaTareas"></ul>
+
+    <!-- Consigna N°3 -->
+    <h2>3. Validación de Formulario</h2>
+    <h4>Crea un formulario de registro con los siguientes campos:</h4>
+    <ul>
+      <li>Nombre (requerido, mínimo 3 caracteres)</li>
+      <li>Email (formato válido)</li>
+      <li>
+        Contraseña (mínimo 8 caracteres, debe incluir mayúsculas, minúsculas y
+        números)
+      </li>
+      <li>Confirmación de contraseña (debe coincidir con la contraseña)</li>
+    </ul>
+    <!-- Ejercicio N°3 -->
+    <form>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Lucila" required />
+        <span id="errorNombre"></span>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="ejemplo@gmail.com"
+          required />
+        <span id="errorEmail"></span>
+      </div>
+      <div>
+        <label for="contra">Contraseña</label>
+        <input
+          type="password"
+          id="contra"
+          placeholder="••••••••••••••"
+          required />
+        <span id="errorContra"></span>
+      </div>
+      <div>
+        <label for="contraConfirmar">Confirmar Contraseña</label>
+        <input
+          type="password"
+          id="contraConfirmar"
+          placeholder="••••••••••••••"
+          required />
+        <span id="errorContraConfirmar"></span>
+      </div>
+      <br />
+      <button type="submit" id="btnEnviar" disabled>Enviar</button>
+    </form>
 
     <script src="/clase-18/js/ejercicio-1.js"></script>
     <script src="/clase-18/js/ejercicio-2.js"></script>
